@@ -9,11 +9,61 @@
 		</header>
 		<hr/>
 		<div>
-		<p>No.3
+		<p>No.4
+		<pre>
+关键字: break, continue, pass
+
+break 和 continue一般会用在循环语句中，
+break:如果在程序中遇到break，是指退出该循环
+continue:如果在程序中遇到continue，是指退出本次循环，继续进行下一次循环
+
+pass:pass语句是指不做任何事情
+
+详细文档请见:http://docs.python.org/3/tutorial/controlflow.html#break-and-continue-statements-and-else-clauses-on-loops
+
+例子:
+break:
+for i in range(10):
+	if i == 8:
+		break
+	else:
+		print( i )
+
+输出结果
+0 1 2 3 4 5 6 7
+
+continue:
+for i in range(10):
+	if i == 8:
+		continue
+	else:
+		print( i )
+
+输出结果
+0 1 2 3 4 5 6 7 9
+
+pass:
+主要使用在 当条件不满足或者满足的时候，不做任何事情，又由于if:语句里面不能为空语句，所以用pass来代替
+
+i = 11
+if i <= 10:
+	pass
+else:
+	print( i )
+
+题目：修改之前写的冒泡算法，提高其效率。使用上面讲述的语句(不一定全都使用)
+
+Tips:这里面效率提高主要是在循环的时候会有重复的判断
+		</pre>
+		</div>
+
+		<div>
+		<s><p/>No.3</s>
 		<pre>
 根据No.1中的movies数据，现在我想要获取5部电影，让他们按照电影年份有古至今进行排序，然后输出
 
 Tips:需要用到 No.1 和 No.2 中的内容。
+<a href="code/No.3.py">Code</a>
 		</pre>
 		</div>
 
