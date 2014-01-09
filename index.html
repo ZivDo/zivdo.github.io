@@ -9,7 +9,42 @@
 		</header>
 		<hr/>
 		<div>
-		<p>No.5
+		<p>No.6
+		<pre>
+目标：构建一个具有相应属性的敌人和塔
+要求：敌人具有血量、移动速度
+	 血量会根据敌人等级增加而增加
+	 速度也会根据敌人等级增加而增加
+
+	 创建一个敌人(monster)字典，
+	 里面分别有name,level、hp、speed三种关键字，其实我们应该可以称其为monster的属性
+	 name对应为"Little Jim"
+	 level所对应value值为1
+	 hp对应相应的list，里面存入敌人血量，分别有5级，100，200，300，400，500
+	 speed对应相应的list，里面存入敌人移动速度，分别有5级，1, 1.2, 1.4, 1.6, 1.8
+
+	 如上要求，创建一个塔的字典
+	 分别有level, dmg, range
+	 level对应默认value值为1
+	 dmg为list,5个等级内容分别为 100, 120, 140, 160, 180
+	 range为list,5个等级内容分别为 0.8, 1, 1.2, 1.4, 1.6
+
+
+	 monster具有一个函数，叫recieveDmg( _dmg ),内容是输出接收的_dmg值
+	 tower具有一个函数，交attack( _target, _dmg ),
+	 _target是monster数组，_dmg表示tower当前攻击值
+	 attack函数内容输出所要攻击敌人的名称,以及调用monster里面的recieveDmg函数，
+	 并把attack中接收的_dmg值传入到recieveDmg函数当中
+
+
+Tips:对于字典来说，value值可以为函数
+
+		</pre>
+		</div>
+
+
+		<div>
+		<s><p/>No.5</s>
 		<pre>
 有一件很诡异的事情，在list中。List这个玩意儿获取里面内容必须要有下标才能获取。
 其实数字这个东西对人类来说是一个不太好记的东西，所以伟大的猿人类发明了字典。
